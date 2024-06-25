@@ -1,0 +1,192 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #ffcc00;
+}
+
+header p {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+/* Imagen de Perfil */
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 5px solid #ffcc00;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Listas y Tarjetas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+li i {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+/* Tarjetas de Proyectos y Habilidades */
+.project-card, .skill-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3, .skill-card p {
+    margin: 0;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Grilla de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Iconos y Gráficos */
+.section-content i {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+/* Enlaces */
+.section-content a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.section-content a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+/* Ajustes de margen y padding */
+.container {
+    padding: 20px;
+}
+
+.section-content p {
+    margin: 0 0 20px 0;
+}
